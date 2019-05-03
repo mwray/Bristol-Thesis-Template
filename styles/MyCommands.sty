@@ -1,0 +1,86 @@
+
+\newcommand{\Chap}[1]{Ch.~\ref{chap:#1}}
+\newcommand{\App}[1]{App.~\ref{app:#1}}
+\newcommand{\Sec}[1]{Sec.~\ref{sec:#1}}
+\newcommand{\Fig}[1]{Fig.~\ref{fig:#1}}
+%\newcommand{\Eqn}[1]{Eqn~\ref{eqn:#1}}
+\newcommand{\Eqn}[1]{(\ref{eqn:#1})}
+\newcommand{\Tbl}[1]{Table~\ref{tbl:#1}}
+\newcommand{\Alg}[1]{Alg.~\ref{alg:#1}}
+
+\newcommand{\ea}{et~al.\@~}
+\newcommand{\IR}[1][]{\ensuremath{\mathbbm{R}^{#1}}} % Euclidean space symbol
+\newcommand{\IP}[1][]{\ensuremath{\mathbbm{P}^{#1}}} % Projective space symbol
+\newcommand{\lpi}[2][]{\ensuremath{\mathlarger{\mathlarger{\mathlarger{\pi}}}_{#2}^{#1}}} % a larger pi symbol
+\newcommand{\mpi}[2][]{\ensuremath{\mathlarger{\mathlarger{\pi}}_{#2}^{#1}}} % a meduim large pi symbol
+\newcommand{\Plp}{\ensuremath{\mathrm{\Pi\!\Pi}}} % Caps plane-pair symbol
+\newcommand{\X}[2][] {\ensuremath{\mathrm{X}_{#2}^{#1}}} %X matrix allowing sub and superscripts
+\newcommand{\x}[2][] {\ensuremath{\mathrm{x}_{#2}^{#1}}}
+\newcommand{\plp}[2][]{\ensuremath{{\mathlarger{\mathlarger{\pi\!\pi}}}{_{#2}^{#1}}}} % plane-pair symbol
+\newcommand{\degrees}{\ensuremath{^\circ}} % a superscript degrees symbol
+\newcommand{\mat}[1]{\ensuremath{\mathbf{{#1}}}} % puts character in bold for representing Matrices
+
+\def\bsymbol#1{\mbox{\boldmath$\displaystyle#1$\unboldmath}}
+\newcommand{\bomega}{\ensuremath{\mbox{\boldmath$\displaystyle\omega$\unboldmath}}}
+
+\newenvironment{alwayssingle}{%
+       \@restonecolfalse\if@twocolumn\@restonecoltrue\onecolumn
+       \else\newpage\fi}
+       {\if@restonecol\twocolumn\else\newpage\fi}
+
+\newenvironment{itemize*}
+{\begin{itemize}
+   \setlength{\topsep}{-10em} %amount of extra vertical space above and below list and text
+   \setlength{\partopsep}{0pt}% extra length at top if environment is preceded by a blank line
+   \setlength{\itemsep}{-1pt} %amount of extra vertical space between items
+%   \setlength{\itemindent}{-1.5em} %indentation of first line of an item; can be negative
+%   \setlength{\listparindent}{-1.5em}%amount of extra space for indent after the first in an item; can be negative
+    \setlength{\leftmarginii}{3em}
+    \setlength{\leftmargini}{0.1em}
+    \setlength{\leftmargin}{0.1em} %horizontal distance between the left margins of the environment and list: non-neg
+%  \setlength{\rightmargin}{15em} %horizontal distance between the left margins of the environment and list: non-neg
+%    \setlength{\labelwidth}{1.5em} %normal width of label box;
+%  \setlength{\labelsep}{5em}% separation between box containing label and the text of 1st line of item
+%  \setlength{\parsep}{0pt} %vertical space between paragraphs within one item
+}{\end{itemize}}
+
+
+\newenvironment{description*}
+{\begin{description}
+  \setlength{\parskip}{-5pt}
+  \setlength{\topsep}{-10em} %amount of extra vertical space at top of list
+  \setlength{\partopsep}{-10em}% extra length at top if environment is preceded by a blank line
+  \setlength{\itemsep}{-10pt}
+  \setlength{\itemindent}{-2em}
+}{\end{description}}
+
+\newenvironment{enumerate*}
+{\begin{enumerate}
+  \setlength{\parskip}{0pt}
+  \setlength{\topsep}{0em} %amount of extra vertical space at top of list
+  \setlength{\partopsep}{-\baselineskip}% extra length at top if environment is preceded by a blank line
+  \setlength{\itemsep}{0.5 \baselineskip}
+}{\end{enumerate}}
+
+
+\renewcommand\fs@boxed{\def\@fs@cfont{\bfseries}\let\@fs@capt\floatc@plain
+  \def\@fs@pre{\setbox\@currbox\vbox{\hbadness10000
+    \moveleft3.4pt\vbox{\advance\hsize by6.8pt
+      \hrule \hbox to\hsize{\vrule\kern3pt
+        \vbox{\kern3pt\box\@currbox\kern3pt}\kern3pt\vrule}\hrule\vspace{2em}}}}%
+  \def\@fs@mid{\kern2pt}%
+  \def\@fs@post{}\let\@fs@iftopcapt\iffalse}
+
+\makeatletter  % Ensures float pages are vertically aligned to top not centre
+\setlength{\@fptop}{10pt}
+\makeatother
+
+
+
+
+
+
+% Creates a command \symbolfootnote to allow use of symbols in foot notes but can still use \footnote for numbers
+% 1 - *, 2 - dagger, 3 - doubledagger etc.
+\long\def\symbolfootnote[#1]#2{\begingroup%
+\def\thefootnote{\fnsymbol{footnote}}\footnote[#1]{#2}\endgroup}

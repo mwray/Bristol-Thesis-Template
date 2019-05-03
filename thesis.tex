@@ -1,0 +1,84 @@
+%Bristol Vision Thesis - v0.2 - 2011-02-14 - John McGonigle <mcgonigle@cs.bris.ac.uk>
+%Edited 03/05/19 Michael Wray
+
+%README:
+%Edit the files in preliminaries/ for everything before the work chapters
+%Work chapters go in content/
+%\cdp clear a double page in a smart way so that two sided printing looks right
+%The texcount.pl needs perl to do the proper word count
+
+%The print options here are for when the pages will be bound, for  
+\documentclass[oneside,12pt,fleqn,a4paper]{book}\newcommand\oddmar{26mm}%SCREEN
+%\documentclass[oneside,12pt,fleqn,a4paper]{book}\newcommand\oddmar{33mm}%PRINT (one sided)
+%\documentclass[twoside,12pt,fleqn,a4paper]{book}\newcommand\oddmar{33mm}%PRINT (two sided)
+
+%when doing proper printing sets the hyperlinks to black so no one tries to click the printed page
+\newcommand\linkcol{blue}\newcommand\citecol{red}\newcommand\anchcol{green}\newcommand\refbacktf{true}%SCREEN
+%\newcommand\linkcol{black}\newcommand\citecol{black}\newcommand\anchcol{black}\newcommand\refbacktf{false}%PRINT
+
+
+
+
+%%%TITLE ETC.%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%this edits the file: thesisbunf/bunf03title.tex
+\newcommand\THESISTITLE{Great Research: The Title}
+\newcommand\MYNAME{The Shining Star}
+\newcommand\DATE{\today}
+\newcommand\FACULTY{Faculty of Engineering}
+\newcommand\RESEARCHGROUP{Department of Computer Science}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%these files can be copy and pasted here, they're just \input here to keep this file "tidy"
+\input{thesisbunf/bunf01a.tex}
+\input{thesisbunf/bunf02margins.tex}
+\input{thesisbunf/bunf03title.tex}%title page is here (you can edit to change spacing)
+\input{thesisbunf/bunf04prelim.tex}
+
+
+
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{amssymb}
+\usepackage{xcolor}
+
+
+\usepackage{amsmath}
+
+
+\usepackage{booktabs}
+\usepackage[parfill]{parskip}
+\usepackage{amssymb}
+
+
+\usepackage{booktabs}
+\usepackage{multirow}
+
+\begin{document}
+%%%PRELIMINARIES%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{thesisbunf/bunf04prelimactual.tex}%comment out to start at chapters
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mainmatter
+\setcounter{page}{1}
+\onehalfspacing % set one and a half linespacing
+%\doublespacing
+%\setstretch{1.4}%if you want other spacings
+
+
+%%%MAIN CONTENT%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{chapters/intro}\cdp
+
+
+%%%REFERENCES%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{thesisbunf/bunf05refs.tex}
+
+
+%%%%APPENDIX%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\appendix
+\noappendicestocpagenum
+\addappheadtotoc
+
+\input{appendices/appendix_a.tex}\cdp
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}

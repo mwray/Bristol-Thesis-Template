@@ -1,0 +1,6 @@
+rm output/*
+
+pdflatex -output-directory output thesis.tex
+bibtex thesis
+pdflatex -output-directory output thesis.tex
+pdflatex -output-directory output thesis.tex

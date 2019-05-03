@@ -1,0 +1,101 @@
+%\watermark{DRAFT COPY ONLY}
+
+\pagenumbering{alph}
+\pagestyle{empty}
+
+
+\phantomsection
+\pdfbookmark[0]{Preliminaries}{pbfront}
+\phantomsection
+\subpdfbookmark{Title}{pbtitle}
+
+\maketitle
+
+\singlespacing
+
+\frontmatter
+
+
+ 
+\cdp
+\phantomsection
+\currentpdfbookmark{Abstract}{pbabstract}
+\input{preliminaries/abstract}
+\cdp
+
+\phantomsection
+\currentpdfbookmark{Declaration}{declaration}
+\input{preliminaries/declaration}
+\cdp
+
+\phantomsection
+\currentpdfbookmark{Acknowledgement}{pbacknowledgement}
+\input{preliminaries/acknowledgement}
+\cdp
+
+\phantomsection
+\currentpdfbookmark{Publications}{pbpublications}
+\input{preliminaries/publications}
+\cdp
+
+\phantomsection
+\currentpdfbookmark{Dedication}{pbdedication}
+\input{preliminaries/dedication}
+\cdp
+
+\setcounter{page}{1}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{2}
+\pagenumbering{roman}
+
+\fancypagestyle{plain}{%
+\fancyhf{} % clear all header and footer fields
+\fancyfoot[RO]{\thepage}
+\fancyfoot[LE]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+}
+
+\pagestyle{plain}
+
+\clearpage
+\phantomsection
+\pdfbookmark[0]{Contents}{tocb}
+\renewcommand*\contentsname{\textbf{Contents}}
+\tableofcontents
+\cdp
+
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{List of Figures}
+\renewcommand*\listfigurename{\textbf{List of Figures}}
+\listoffigures{}
+\cdp
+
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{List of Tables}
+\renewcommand*\listtablename{\textbf{List of Tables}}
+\listoftables{}
+\cdp
+
+\fancypagestyle{fancya}{%
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+}
+
+\pagestyle{fancya}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\renewcommand{\chaptermark}[1]{\markboth{\chaptername\ \thechapter.\ #1}{}}
+\fancyfoot{}
+\fancyhead[RO]{\thepage}
+\fancyhead[LE]{\thepage}
+\fancyhead[LO]{\bfseries \rightmark}
+\fancyhead[RE]{\bfseries \leftmark}
+
+
+\pagenumbering{arabic}
+\cdp
+
+

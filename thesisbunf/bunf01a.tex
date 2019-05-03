@@ -1,0 +1,62 @@
+\newcommand\cdp{\clearpage{\pagestyle{empty}\cleardoublepage}}
+
+\usepackage{ifpdf}
+\ifpdf
+    \pdfinfo { /Title  (\THESISTITLE)
+               /Creator (TeX)
+               /Producer (pdfTeX)
+               /Author (\MYNAME)
+               /Subject (phMRI methods)
+               /Keywords (PhD, Thesis, fMRI, phMRI)}
+    \pdfcatalog { /PageMode (/UseOutlines)
+                  /OpenAction (fitbh)  }
+\fi
+\ifpdf
+    \usepackage[ pdftex, plainpages = false, pdfpagelabels, 
+                 pdfpagelayout = useoutlines,
+                 bookmarks,
+                 bookmarksopen = true,
+                 bookmarksnumbered = true,
+                 breaklinks = true,
+                 linktocpage,                 
+                 colorlinks = true,
+                 linkcolor = \linkcol,
+                 urlcolor  = \linkcol,
+                 citecolor = \citecol,
+                 anchorcolor = \anchcol,
+                 pagebackref = \refbacktf,                 
+                 hyperindex = true,
+                 hyperfigures
+                 ]{hyperref} 
+    \usepackage[pdftex]{graphicx}
+    \DeclareGraphicsExtensions{.png, .jpg, .pdf}
+    \pdfcompresslevel=9
+    \graphicspath{{figures/PNG/}{figures/PDF/}{figures/}}
+\fi
+
+%\usepackage{epsfig}
+\usepackage{amssymb, amsmath, amsbsy} % needed for AMSLatex maths fonts, amsbsy needed for \boldsymbol
+\usepackage{exscale, relsize} % allows relative sizes (\larger \smaller[2] \mathlarger etc) -needs exscale package
+\usepackage{bbm} % needed for mathbbm - used for \IR & \IP (see MyCommands.sty)
+
+
+%\usepackage{graphicx} % THE package to use for images (as opposed to epsfig or graphic)
+\usepackage{url} % formats urls nicely (or use hyperref which also creates clickable links in pdfs)
+\usepackage{fancyhdr} % Nice headers (and footers)
+\usepackage[Lenny]{styles/fncychap} % Nice Chapter headings
+%\usepackage{sectsty} % Alter section styles
+\usepackage{setspace} % allows use \doublespace etc
+%\usepackage{color} % not needed if using graphicx
+%\usepackage{colortbl}
+\usepackage[margin = 0.7cm, font=normalsize, labelfont=bf, textfont=sl]{caption} % set caption fonts
+%\usepackage{subfig} % subfig package for creating subfigures -requires caption package
+\usepackage[boxed, chapter]{algorithm} % allows use of algorithm environment
+\usepackage{styles/algpseudocode} % part of algorithmicx package to allow writing/typesetting of algorithms
+%\usepackage{algorithm2e}
+\usepackage[below]{placeins} % [section] ensures floats are placed within the section they are declared or if [below] then could be in next section if at least some of old section on that page
+\usepackage{appendix}
+
+\usepackage[sort, numbers]{natbib} % improved bibliography options (sort = sort citations in text, numbers = use numbers not alpha)
+
+\usepackage{styles/MyCommands}
+\usepackage{styles/watermark}

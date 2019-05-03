@@ -1,0 +1,21 @@
+\newcommand{\submittedtext}{{A dissertation submitted to the University of Bristol in accordance with the requirements for the degree of Doctor of Philosophy in the \FACULTY}}
+
+\renewcommand{\maketitle}{
+\begin{alwayssingle}
+%    \renewcommand{\footnotesize}{\small}
+%    \renewcommand{\footnoterule}{\relax}
+%    \thispagestyle{empty}
+  \begin{center}
+    {\Huge {\bfseries {\THESISTITLE}} \par}
+    {\large \vspace*{35mm}{\Large {\bfseries {\MYNAME}}} \par}
+	{\large \vspace*{35mm} {{\includegraphics[width=70mm]{BristolLogo}} \par}}
+	{\vspace*{35mm}{\submittedtext} \par}
+	{\vspace*{2ex}{\DATE}}
+  \end{center}
+  \vspace*{10mm}
+  \begin{flushright}{\input{wordcount.txt}words}\end{flushright}
+%  \null\vfill
+\end{alwayssingle}
+}
+
+
