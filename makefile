@@ -20,4 +20,4 @@ all: thesis.pdf
 	latexmk -f -pdf -pdflatex="pdflatex -interaction=nonstopmode --shell-escape" -output-directory=output -aux-directory=output -use-make $<
 
 clean:
-	cd output; latexmk -C ../$(DOC_SRC)
+	latexmk -output-directory=output -aux-directory=output -C $(DOC_SRC)
