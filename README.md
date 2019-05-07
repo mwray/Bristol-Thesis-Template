@@ -15,6 +15,7 @@ This has been passed down the computer vision lab for eons, I decided to try and
     * bunf05refs.tex creates backmatter
 * library.bib bibliography file
 * doitall - runs through pdflatex and bibtex several times
+* makefile - Uses latexmk to compile the thesis.
 
 
 More instructions in thesis.tex . . .
