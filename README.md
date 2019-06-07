@@ -1,6 +1,6 @@
 # Bristol Thesis Template
 
-This has been passed down the computer vision lab for eons, I decided to try and clean it up as best as I could (be bothered to) before writing up myself.
+This has been passed down the computer vision lab for aeons, I decided to try and clean it up as best as I could (be bothered to) before writing up myself.
 
 ## Main Files
 * thesis.tex is the main file so to speak which has the inputs for each chapter and appendix.
