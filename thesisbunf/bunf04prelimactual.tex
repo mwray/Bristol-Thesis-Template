@@ -50,8 +50,7 @@
 
 \fancypagestyle{plain}{%
 \fancyhf{} % clear all header and footer fields
-\fancyfoot[RO]{\thepage}
-\fancyfoot[LE]{\thepage}
+\fancyfoot[C]{\thepage}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 }
@@ -84,18 +83,3 @@
 \renewcommand{\headrulewidth}{0.5pt}
 \renewcommand{\footrulewidth}{0pt}
 }
-
-\pagestyle{fancya}
-\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
-\renewcommand{\chaptermark}[1]{\markboth{\chaptername\ \thechapter.\ #1}{}}
-\fancyfoot{}
-\fancyhead[RO]{\thepage}
-\fancyhead[LE]{\thepage}
-\fancyhead[LO]{\bfseries \rightmark}
-\fancyhead[RE]{\bfseries \leftmark}
-
-
-\pagenumbering{arabic}
-\cdp
-
-
