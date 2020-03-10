@@ -179,6 +179,8 @@ OUTPUT output/thesis.lof
 INPUT output/thesis.lot
 INPUT output/thesis.lot
 OUTPUT output/thesis.lot
+INPUT thesisbunf/bunf04mainstyle.tex
+INPUT thesisbunf/bunf04mainstyle.tex
 INPUT chapters/intro.tex
 INPUT chapters/intro.tex
 INPUT /opt/texlive/2016/texmf-dist/tex/latex/psnfss/ot1phv.fd

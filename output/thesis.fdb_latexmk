@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex output/thesis"] 1557237177 "output/thesis.aux" "output/thesis.bbl" "output/thesis" 1557237178
-  "/users/mw1760/Downloads/thesis_template/styles/abbrvnat.bst" 1288282864 26517 d74b6983885599f7a4a9690ac7fb9693 ""
+["bibtex output/thesis"] 1557237177 "output/thesis.aux" "output/thesis.bbl" "output/thesis" 1583839409
+  "./styles/abbrvnat.bst" 1288282864 26517 d74b6983885599f7a4a9690ac7fb9693 ""
   "library.bib" 1556878475 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "output/thesis.aux" 1557237178 1304 4e5f42a05b6385677abbf38b58816e84 ""
+  "output/thesis.aux" 1583839409 1304 4e5f42a05b6385677abbf38b58816e84 ""
   (generated)
   "output/thesis.blg"
   "output/thesis.bbl"
-["pdflatex"] 1557237177 "thesis.tex" "output/thesis.pdf" "thesis" 1557237178
+["pdflatex"] 1583839409 "thesis.tex" "output/thesis.pdf" "thesis" 1583839409
   "/opt/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc" 1486555907 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/opt/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1486555816 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/opt/texlive/2016/texmf-dist/fonts/tfm/adobe/helvetic/phvr7t.tfm" 1486555772 2520 53e01eef820ca829e42c1333c3fd02b9 ""
@@ -89,13 +89,13 @@
   "appendices/appendix_a.tex" 1556880373 40 9a8f5b900155a0b738f50ca1886cec92 ""
   "chapters/intro.tex" 1556881939 54 0ba2d06b87f6438906d3b54672453246 ""
   "figures/BristolLogo.pdf" 1288107258 12827 b6337290c8f4d4630b47495246d8ff4a ""
-  "output/thesis.aux" 1557237178 1304 4e5f42a05b6385677abbf38b58816e84 ""
-  "output/thesis.bbl" 1557237177 275 de5ffaf5b665b622658d80bed97ba2a5 "bibtex output/thesis"
-  "output/thesis.brf" 1557237178 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "output/thesis.lof" 1557237178 40 b4a64fdfb29ace579b6af2a2fa1bd5bf ""
-  "output/thesis.lot" 1557237178 40 b4a64fdfb29ace579b6af2a2fa1bd5bf ""
-  "output/thesis.out" 1557237178 678 5c63334b261ac70c033dc3822827fbc8 ""
-  "output/thesis.toc" 1557237178 337 ea0a31c16dc3898d9cb05a4dfff5ac8c ""
+  "output/thesis.aux" 1583839409 1304 4e5f42a05b6385677abbf38b58816e84 ""
+  "output/thesis.bbl" 1557237900 275 de5ffaf5b665b622658d80bed97ba2a5 "bibtex output/thesis"
+  "output/thesis.brf" 1583839409 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "output/thesis.lof" 1583839409 40 b4a64fdfb29ace579b6af2a2fa1bd5bf ""
+  "output/thesis.lot" 1583839409 40 b4a64fdfb29ace579b6af2a2fa1bd5bf ""
+  "output/thesis.out" 1583839409 678 5c63334b261ac70c033dc3822827fbc8 ""
+  "output/thesis.toc" 1583839409 337 ea0a31c16dc3898d9cb05a4dfff5ac8c ""
   "preliminaries/abstract.tex" 1556878493 59 e9021844ad9e750e64c32a67843c9d1d ""
   "preliminaries/acknowledgement.tex" 1556878514 71 b4fb081b972037188a65156f34ac3401 ""
   "preliminaries/declaration.tex" 1288204934 615 7cd921a75cf80177d59210996b5d2201 ""
@@ -105,12 +105,13 @@
   "styles/algpseudocode.sty" 1288099982 3457 d9077efe6b74c5a094199256af8d7d9a ""
   "styles/fncychap.sty" 1366025726 19402 cf4ed53a1e5e0f9d4e9252fdaf2a393a ""
   "styles/watermark.sty" 1279109710 3440 28c749fe08534aff4cc6edff4b9ce3a7 ""
-  "thesis.tex" 1556890099 2868 658f7f322ffec94735fb8f2f1b4026d2 ""
+  "thesis.tex" 1583839394 2946 2016803bae6f137ca0dd76e874e5a31e ""
   "thesisbunf/bunf01a.tex" 1556890008 2835 454de7d63a0f5f9de74ec6b6176ef333 ""
   "thesisbunf/bunf02margins.tex" 1288285968 1657 ff62ae1d2a2e454add4a9c3c7d2cd800 ""
   "thesisbunf/bunf03title.tex" 1469973182 734 c6f2273b4029d703392decb1b7606d6e ""
+  "thesisbunf/bunf04mainstyle.tex" 1583839394 395 c4d69b18a50f71bb08625ef5d49cbc6a ""
   "thesisbunf/bunf04prelim.tex" 1288286172 1094 7f3b00f765cb755a79d526da4f73a0db ""
-  "thesisbunf/bunf04prelimactual.tex" 1556889864 1927 7e0c29aeb76f1132dc16e763cf998894 ""
+  "thesisbunf/bunf04prelimactual.tex" 1583839394 1577 675844b8bd57cc2f446d8ad52970d706 ""
   "thesisbunf/bunf05refs.tex" 1468959444 294 a839c8b1eea1b6f44b5cca4d879a1266 ""
   "wordcount.txt" 1556879841 0 d41d8cd98f00b204e9800998ecf8427e ""
   (generated)

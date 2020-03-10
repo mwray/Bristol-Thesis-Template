@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.7)  7 MAY 2019 14:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.7)  10 MAR 2020 11:23
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -578,25 +578,15 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [5
 
 
-])
-
-Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 59.
-
-(output/thesis.toc)
+]) (output/thesis.toc)
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
-
-
-
-Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 66.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.66 \cdp
+l.65 \cdp
           [1
 
 
@@ -606,16 +596,11 @@ l.66 \cdp
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
-
-
-Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 73.
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.73 \cdp
+l.72 \cdp
           [2
 
 
@@ -625,29 +610,20 @@ l.73 \cdp
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
-
-
-Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 80.
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.iii}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.80 \cdp
+l.79 \cdp
           [3
 
 
 
 
-]
+]) (./thesisbunf/bunf04mainstyle.tex
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 93.
-
-
-Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 95.
+less on input line 12.
 
 ) (./chapters/intro.tex
 Chapter 1.
@@ -664,12 +640,7 @@ Overfull \hbox (30.0pt too wide) in paragraph at lines 2--2
 [][]  
  []
 
-)
-
-Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 69.
-
-[1
+) [1
 
 
 
@@ -684,12 +655,7 @@ less on input line 69.
 
 Package natbib Warning: Empty `thebibliography' environment on input line 8.
 
-)
-
-Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 12.
-
-[2
+) [2
 
 
 
@@ -697,30 +663,25 @@ less on input line 12.
 
 
 
-]) (./appendices/appendix_a.tex)
-
-Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 81.
-
-[3
+]) (./appendices/appendix_a.tex) [3
 
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 84.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 84.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 85.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 85.
  (output/thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 84.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 84.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 85.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 85.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 5C63334B261AC70C033DC3822827FBC8;678.
 Package rerunfilecheck Info: File `thesis.brf' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 84.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 85.
  ) 
 Here is how much of TeX's memory you used:
- 9347 strings out of 493013
- 135697 string characters out of 6136083
+ 9350 strings out of 493013
+ 135774 string characters out of 6136083
  229294 words of memory out of 5000000
  12666 multiletter control sequences out of 15000+600000
  9746 words of font info for 27 fonts, out of 8000000 for 9000
@@ -733,7 +694,7 @@ s/type1/public/amsfonts/cm/cmr17.pfb></opt/texlive/2016/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmti12.pfb></opt/texlive/2016/texmf-dist/fonts/type1/urw/hel
 vetic/uhvr8a.pfb></opt/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb
 >
-Output written on output/thesis.pdf (12 pages, 75424 bytes).
+Output written on output/thesis.pdf (12 pages, 75084 bytes).
 PDF statistics:
  160 PDF objects out of 1000 (max. 8388607)
  136 compressed objects within 2 object streams
